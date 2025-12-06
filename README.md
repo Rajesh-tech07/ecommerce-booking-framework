@@ -1,4 +1,4 @@
-# 🚀 demo_project — Test Automation Showcase (Sanitized)
+# 🚀 Test Automation Showcase (Sanitized)
 
 A compact, NDA-safe Selenium + TestNG automation framework created specifically for **interview and portfolio demonstration**. All sensitive production/staging URLs, API endpoints, and tokens have been replaced with placeholders, while the technical structure reflects a real-world automation framework.
 

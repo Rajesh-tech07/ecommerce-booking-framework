@@ -40,8 +40,8 @@ demo_project
  │   │       └── DemoSanitizedTest.java
  │   └── resources/
  │       └── application.properties   # Sanitized config
- ├── demo_UserDetails.csv             # Dummy demo data
- ├── demo_UserDetails.xlsx            # Dummy demo data
+ ├── test_UserDetails.csv             # Dummy test data
+ ├── test_UserDetails.xlsx            # Dummy test data
  ├── pom.xml                           # Maven build/dependencies
  └── .github/workflows/ci.yml          # CI workflow
 ```
@@ -86,8 +86,5 @@ This repository is intentionally safe for public sharing:
 
 NDA‑friendly
 
-
-"# demo_project" 
-"# demo_project" 
-"# demo_project"  
+ 
 # ecommerce-booking-framework

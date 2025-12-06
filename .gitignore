@@ -1,0 +1,10 @@
+# Ignore Maven build output
+/target/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Logs (keep if you want them in repo, otherwise uncomment)
+# logs/

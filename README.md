@@ -41,7 +41,7 @@ ecommerce-automation-framework/
  ├── test_UserDetails.xlsx            # Dummy test data
  ├── pom.xml                           # Maven build/dependencies
  └── .github/workflows/ci.yml          # CI workflow
-
+```
 
 ---
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Payment flow">
+	<listeners>
+		<listener class-name="Utilities.TestListners" />
+	</listeners>
+	
+  <test name="Credit card functionality" enabled="false">
+	<parameter name="Validation of credit/debit card " value="Card functionality"></parameter>
+    <classes>
+      <class name="testScripts.landingPageTestScript">
+      	<methods>
+			<include name ="LP_TC_01">
+			</include>
+		</methods>
+		</class>
+		<class name="testScripts.GuestUser">
+			<methods>
+				<include name="GU_01"></include>
+			</methods>
+		</class>
+      <class name="testScripts.paymentTestScripts">
+      <methods>
+		<include name="PTS_01"></include>
+	  </methods>
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="share with card functionality" enabled="false">
+	<parameter name="Validation of Share functionality " value="Share functionality"></parameter>
+    <classes>
+      <class name="testScripts.landingPageTestScript">
+      	<methods>
+			<include name ="LP_TC_01">
+			</include>
+		</methods>
+		</class>
+		<class name="testScripts.signedUserTestScript">
+			<methods>
+				<include name="SU_01"></include>
+			</methods>
+		</class>
+    <class name="testScripts.paymentTestScripts"><methods>
+		<include name="PTS_03"></include>
+	  </methods>
+	   </class> 
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    <test name="Invalid Credit card functionality" enabled="true">
+	<parameter name="Validation of credit/debit card " value="Card functionality"></parameter>
+    <classes>
+      <class name="testScripts.landingPageTestScript">
+      	<methods>
+			<include name ="LP_TC_01">
+			</include>
+		</methods>
+		</class>
+		<class name="testScripts.GuestUser">
+			<methods>
+				<include name="GU_01"></include>
+			</methods>
+		</class>
+      <class name="testScripts.paymentTestScripts">
+      <methods>
+		<include name="PTS_02"></include>
+	  </methods>
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

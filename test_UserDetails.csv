@@ -1,0 +1,3 @@
+type,email,firstName,lastName,countryCode,mobile,password,share
+Guest,demo.user@example.com,Demo,User,+971,0123456789,Test@1234,No
+Signed,signed.user@example.com,Signed,User,+971,0987654321,Test@1234,Yes

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GuestUserFlow">
+	<listeners>
+		<listener class-name="Utilities.TestListners" />
+	
+	</listeners>
+	
+   <test name="OBS smoke testing" enabled="false">
+	<classes>
+		<class name="testScripts.HeaderFunctionality"></class>
+		<class name="testScripts.landingPageTestScript"></class>
+		<class name="testScripts.GuestUser"></class>	
+	</classes>
+  </test> 
+  
+   <test name="Guest user flow" enabled="true">
+	<classes>
+		<class name="testScripts.landingPageTestScript">
+			<methods>
+				<include name="LP_TC_01"></include>
+			</methods>
+		</class>
+		<class name="testScripts.GuestUser">
+			<methods>
+				<include name="GU_01"></include>
+			</methods>
+		</class>
+		
+	</classes>
+   </test>
+   
+   
+    <test name="Edit ticket flow" enabled="false">
+		 <parameter name="Edit ticket flow" value="Edit ticket flow" />
+	<classes>
+		<class name="testScripts.landingPageTestScript">
+			<methods>
+				<include name="LP_TC_01"></include>
+			</methods>
+		</class>
+		<class name="testScripts.GuestUser">
+			<methods>
+				<include name="GU_02"></include>
+			</methods>
+		</class>
+		<class name="testScripts.landingPageTestScript">
+			<methods>
+				<include name="LP_TC_01"></include>
+			</methods>
+		</class>
+		
+	</classes>
+   </test>
+   
+  <test name="Remove ticket flow" enabled="false">
+			 <parameter name="Remove ticket flow" value="Remove ticket flow" />
+
+    <classes>
+        <class name="testScripts.landingPageTestScript">
+            <methods>
+                <include name="LP_TC_01"></include>
+            </methods>
+        </class>
+        <class name="testScripts.GuestUser">
+            <methods>
+                <include name="GU_03"></include>
+            </methods>
+        </class>
+        <class name="testScripts.landingPageTestScript">
+            <methods>
+                <include name="LP_TC_02"></include>
+            </methods>
+        </class>
+    </classes>
+</test>
+
+
+<test name="Validation of Consent Message" enabled="false">
+			 <parameter name="Validation of Consent Message" value="Testing Consent Message" />
+
+    <classes>
+       <class name="testScripts.landingPageTestScript">
+		<methods>
+			<include name="LP_TC_01"></include>
+		</methods>
+	   </class>
+       
+       <class name="testScripts.GuestUser">
+		<methods>
+			<include name="GU_04"></include>
+		</methods>
+	   </class>
+     
+    </classes>
+</test>
+
+<test name="Validation of Form error Message" enabled="false">
+			 <parameter name="Validation of Form error Message" value="Form error Message" />
+
+    <classes>
+       <class name="testScripts.landingPageTestScript">
+		<methods>
+			<include name="LP_TC_01"></include>
+		</methods>
+	   </class>
+       
+       <class name="testScripts.GuestUser">
+		<methods>
+			<include name="GU_05"></include>
+		</methods>
+	   </class>
+     
+    </classes>
+</test>
+
+</suite> <!-- Suite -->

@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# ecommerce-automation-framework — Test Automation Framework (Sanitized)
-=======
+
 # 🚀 Test Automation Showcase (Sanitized)
->>>>>>> e9a6030c21c25e1908e32403437d6859b90df83e
 
 A compact, NDA-safe Selenium + TestNG automation framework intended for interview and portfolio demonstrations. Sensitive URLs, tokens and environment details are replaced with placeholders.
 
@@ -32,15 +29,6 @@ A compact, NDA-safe Selenium + TestNG automation framework intended for intervie
 ecommerce-automation-framework/
  ├── src
  │   ├── main/java
-<<<<<<< HEAD
- │   └── test/java
- ├── src/test/resources/application.properties
- ├── test_UserDetails.csv
- ├── test_UserDetails.xlsx
- ├── pom.xml
- └── logs/
-     └── ecommerce.log
-=======
  │   │   ├── base/                # BaseClass, DriverFactory (sanitized)
  │   │   ├── pages/               # Page Objects (sanitized)
  │   │   └── utils/               # Helpers, XlsReader, config utils
@@ -53,8 +41,7 @@ ecommerce-automation-framework/
  ├── test_UserDetails.xlsx            # Dummy test data
  ├── pom.xml                           # Maven build/dependencies
  └── .github/workflows/ci.yml          # CI workflow
->>>>>>> e9a6030c21c25e1908e32403437d6859b90df83e
-```
+
 
 ---
 
@@ -69,12 +56,11 @@ mvn -Dxls.path=test_UserDetails.csv -Dapp.url=https://example.local -Dtest=<test
 
 ---
 
-<<<<<<< HEAD
 ## Notes
 - groupId/artifactId in pom.xml updated to: com.ecommerce : ecommerce-automation-framework
 - Log file is logs/ecommerce.log (configured in src/test/resources/log4j.properties)
 - If you use an IDE, refresh the project after these changes and run `mvn -DskipTests clean` locally to remove stale build artifacts under target.
-=======
+
 ## 🔄 Override Demo Data or Application URL
 You can override config at runtime:
 ```bash
@@ -107,4 +93,3 @@ NDA‑friendly
 
  
 # ecommerce-booking-framework
->>>>>>> e9a6030c21c25e1908e32403437d6859b90df83e
